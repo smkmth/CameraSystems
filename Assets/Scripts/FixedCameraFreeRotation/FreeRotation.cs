@@ -13,7 +13,11 @@ public class FreeRotation : MonoBehaviour
     private float rot;
 
     // Start is called before the first frame update
-   
+
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 
     // Update is called once per frame
     void Update()
